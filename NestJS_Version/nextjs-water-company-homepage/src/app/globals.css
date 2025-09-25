@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+:root {
+  --nvt-blue: #152A4B;
+  --nvt-white: #ffffff;
+  --nvt-orange: #FF950E;
+  --nvt-orange-hover: #FF9900;
+}
+
+body {
+  background: var(--nvt-blue);
+  color: var(--nvt-white);
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom styles for NVT design */
+.sidebar-menu .ant-menu-item {
+  background: transparent !important;
+  border: none !important;
+  margin-bottom: 8px !important;
+  padding: 0 !important;
+  height: 48px !important;
+  line-height: normal !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.sidebar-menu .ant-menu-item:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.sidebar-menu .ant-menu-item-selected {
+  background: rgba(255, 149, 14, 0.2) !important;
+}
+
+.sidebar-menu .ant-menu-item a {
+  display: flex !important;
+  width: 100% !important;
+  height: 100% !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
+}
+
+.sidebar-menu .ant-menu-item a:hover {
+  color: #aaaaaa !important;
+}
+
+/* Ant Design Menu overrides for header */
+.ant-menu-dark .ant-menu-item:hover {
+  background-color: rgba(255, 149, 14, 0.2) !important;
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  background-color: rgba(255, 149, 14, 0.3) !important;
+}
+
+.ant-menu-dark .ant-menu-item a {
+  color: var(--nvt-white) !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.ant-menu-dark .ant-menu-item a:hover {
+  color: var(--nvt-orange) !important;
+}
+
+/* Ant Design Card styling for dark theme */
+.ant-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.ant-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--nvt-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar-menu {
+    display: none;
+  }
+  
+  .ant-layout-content {
+    margin-left: 0 !important;
+  }
+}
