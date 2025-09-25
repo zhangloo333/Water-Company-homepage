@@ -6,6 +6,8 @@ A comprehensive web project showcasing the evolution from legacy HTML to modern 
   <img src="./HTML_Version/HTML4.0 website.gif" alt="Original HTML Website Preview" />
 </p>
 
+Live Link: https://water-company-homepage.vercel.app/
+
 ## Project Versions
 
 ### 📁 HTML Version (Legacy - November 2011)
